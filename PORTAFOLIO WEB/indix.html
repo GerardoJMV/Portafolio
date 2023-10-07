@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>GM Portafolio Web</title>
+</head>
+<body>
+    <!--Inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/GM/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVIVIOS</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!--Iconos del Menu Responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+
+                    </div>
+
+                    <!--Iconos de las Redes Sociales-->
+                    <div class="redes">
+                        <a href="https://linkedin.com/in/gerardo-jesus-molina-valencia-0a4870272/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenido">Bienvenidos</p>
+                <h2>Soy <span>Gerardo Jesús Molina Valencia</span>, Ing. en Sistemas Computacionales</h2>
+                <p class="descripcion">Experiencia en le Desarrollo y Diseño de páginas Web como también en Bases de Datos. 
+                    Experiencia en Mantenimiento de Redes y Telecomunicaciones </p>
+                <a href="#portafolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Sobre Mi-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/gera.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Gerardo Jesús Molina Valencia</span></h2>
+            <h3>Ing. en Sistema Computacionales</h3>
+            <p>Egreasado de la carrera de Ingeniería en Sistemas Computacionales, con conocimiento en Desarrollo y Diseño Web, 
+                conocimientos generales en informática y en el área de Telecomunicaciones como también experto en le manejo de
+                Bases de Datos. Organizado, Flexible, Comunicativo con Alto nivel de Responsabilidad.</p>
+            <a download="CV_GM" href="CV.pdf">Descargar CV</a>
+        </div>
+    </section>
+
+    <!--Seccion Servicios-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">EXPERIENCIA</h3>
+        <div class="fila">
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseñador Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML, CSS Y JAVASCRIP</li>
+                </ul>
+                <p>Especializado en la elaboración de páginas web responsivas.</p>
+            </div>
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Tutor en Informatica</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Herramientas Office y Teoría de la Informatica</li>
+                </ul>
+                <p>Tutor privado para la enseñanza básica de utilización de la Herramienta
+                    office así como también el aprendizaje de equipo de cómputo. </p>
+            </div>
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>**************</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>**************</li>
+                </ul>
+                <p>**************</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>**************</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>**************</li>
+                </ul>
+                <p>**************</p>
+            </div>
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>**************</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>**************</li>
+                </ul>
+                <p>**************</p>
+            </div>
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>**************</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>**************</li>
+                </ul>
+                <p>**************</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Habilidades-->
+    <div class="contenedor-skills" id="skills">
+        <h1>HABILIDADES</h1>
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>HTML y CSS</p>
+                <span class="porcentaje"></span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>JAVASCRIP</p>
+                <span class="porcentaje"></span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>BASE DE DATOS</p>
+                <span class="porcentaje"></span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso3"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>PYTHON</p>
+                <span class="porcentaje"></span>
+            </div>
+            <div class="barra">
+                <div id="c#" class="barra-progreso4"></div>
+            </div>
+        </div>
+    </div>
+    <!--Seccion Portafolio-->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+               <div class="overlay"></div>
+               <img src="img/proyecto1.png" alt=""> 
+               <div class="info">
+                <h4>Descripcion del Proyecto</h4>
+                <p>Portafolio Web Responsivo</p>
+               </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto2.jpg" alt=""> 
+                <div class="info">
+                 <h4>Descripcion del Proyecto</h4>
+                 <p>Juego: Adivina la Palabra</p>
+                </div>
+             </div>
+             <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto3.png" alt=""> 
+                <div class="info">
+                 <h4>Descripcion del Proyecto</h4>
+                 <p>Calculadora</p>
+                </div>
+             </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+               <div class="overlay"></div>
+               <img src="img/proyecto4.jpg" alt=""> 
+               <div class="info">
+                <h4>Descripcion del Proyecto</h4>
+                <p>Diseño Web</p>
+               </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto5.jpg" alt=""> 
+                <div class="info">
+                 <h4>Descripcion del Proyecto</h4>
+                 <p>Diseño Web</p>
+                </div>
+             </div>
+             <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto6.jpg" alt=""> 
+                <div class="info">
+                 <h4>Descripcion del Proyecto</h4>
+                 <p>Diseño Web</p>
+                </div>
+             </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+               <div class="overlay"></div>
+               <img src="img/proyecto7.jpg" alt=""> 
+               <div class="info">
+                <h4>Descripcion del Proyecto</h4>
+                <p>Diseño Web</p>
+               </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto8.jpg" alt=""> 
+                <div class="info">
+                 <h4>Descripcion del Proyecto</h4>
+                 <p>Diseño Web</p>
+                </div>
+             </div>
+             <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto9.jpg" alt=""> 
+                <div class="info">
+                 <h4>Descripcion del Proyecto</h4>
+                 <p>Diseño Web</p>
+                </div>
+             </div>
+        </div>
+    </section>
+    <!--Seccion Contacto-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame</h3>
+        <div class="contenedor-form">
+            <form action="enviar.php" method="post">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>  
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+    <!--Seccion Footer-->
+    <footer>
+        <p>Todos los Derechos Reservados GM-2023</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+    </footer>
+    
+    <script src="scrip.js"></script>
+</body>
+</html>
